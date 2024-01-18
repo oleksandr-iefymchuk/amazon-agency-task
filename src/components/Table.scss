@@ -1,0 +1,60 @@
+.table-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  height: 180px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 20px rgb(0 0 0 / 15%);
+
+  .search-field {
+    width: 90%;
+    margin: 5px auto;
+    text-align: left;
+
+    .search-input {
+      background-color: transparent;
+      padding: 3px 10px;
+      border: 2px solid #50bde4;
+    }
+  }
+
+  .table-body {
+    width: 90%;
+    border-collapse: collapse;
+    .table-row {
+      &:hover {
+        background-color: #d3d9e3;
+      }
+    }
+
+    .table-headers {
+      background-color: #cce3ec;
+
+      .sort-arrow {
+        display: inline-block;
+        width: 20px;
+      }
+    }
+  }
+
+  .pagination-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #ffffff;
+    margin-bottom: 5px;
+
+    .pagination-button {
+      background-color: transparent;
+      cursor: pointer;
+      padding: 4px 25px;
+      margin: 0 5px;
+      border: 2px solid #50bde4;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #50bde4;
+      }
+    }
+  }
+}
